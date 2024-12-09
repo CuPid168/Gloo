@@ -4,6 +4,8 @@
 This model can classify three Indonesian Packaged products : 
 
 - Better Biscuit
+- Leminerale mineral water
+- Oreo
 - Pocari Sweat
 - YouC1000 500ml
 
