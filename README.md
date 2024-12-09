@@ -16,6 +16,16 @@ api: Contains the API built with Node.js and Express to access data from the dat
 api-model: Contains the API for deploying machine learning models.
 
 ## Our Project
+![image](https://github.com/user-attachments/assets/3637d315-97a4-42f6-8354-80781d54ab90)
+![image](https://github.com/user-attachments/assets/17651436-f93d-4afd-94e9-2c04a4386620)
+![image](https://github.com/user-attachments/assets/3d9faa60-db96-42c3-9069-50735e5e2363)
+![image](https://github.com/user-attachments/assets/58826242-c10d-4409-a8a4-92dc815e0a3a)
+![image](https://github.com/user-attachments/assets/56f4871c-ef8e-4c7a-ae8a-e3b90eb2b282)
+![image](https://github.com/user-attachments/assets/e3091d48-dc8b-48f5-9c21-daff1ff9b390)
+![image](https://github.com/user-attachments/assets/b39b2f4c-21b8-4484-8206-4a8e7c206a15)
+![image](https://github.com/user-attachments/assets/7aa32c1d-4c26-4e31-ae00-0890bd73dfa9)
+![image](https://github.com/user-attachments/assets/ba576d3b-b46f-4908-9e53-0cbe9b5bba90)
+
 
 
 
