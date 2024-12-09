@@ -9,11 +9,15 @@ This repository contains the source code for an application API built using Node
 ## Branches
 This repository has the following branches:
 
-master: Contains the machine learning database.
+Main: The main branch
 
 api: Contains the API built with Node.js and Express to access data from the database. This branch is deployed to Cloud Functions.
 
-api-model: Contains the API for deploying machine learning models.
+application: Contains the mobile application source code
+
+ml-training: Contains model training notebook along with its training process and the main model
+
+model-demo: Contains a demo application created with Streamlit to demonstrate how the model performs
 
 ## Our Project
 <img src="https://github.com/user-attachments/assets/3637d315-97a4-42f6-8354-80781d54ab90" alt="Image 1" width="600"/>
