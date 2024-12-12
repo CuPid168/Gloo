@@ -22,6 +22,7 @@ This repository has the following branches:
 ## How to Use the Gloo App
 **Getting Started:** 
 - A smartphone running Android 7.0 (API level 24) or above.
+- Install APK
 - Camera Access
 - Internet Access
 
