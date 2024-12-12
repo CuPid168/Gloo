@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Firebase build files
+public/
+firebase-debug.log
+firebase-error.log
+
+# Secrets
+*.env
+*.json
+serviceAccountKey.json
+
+# Ignore Firebase CLI settings
+.firebaserc
+firebase.json
+
+# MacOS system files
+.DS_Store
+
+# IDE/Editor files
+.vscode/
+.idea/

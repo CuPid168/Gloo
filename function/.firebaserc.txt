@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "default": "ccbangkit-d0022"
+  }
+}
