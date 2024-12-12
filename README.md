@@ -19,6 +19,28 @@ This repository has the following branches:
 
 **model-demo**: Contains a demo application created with Streamlit to demonstrate how the model performs
 
+## How to Use the Gloo App
+**Getting Started:** 
+- A smartphone running Android 7.0 (API level 24) or above.
+- Camera Access
+- Internet Access
+
+**Launch the App:** Open Gloo on your Android device
+
+**Choose Gloocam Menu** 
+
+**Scan a Product:**
+- Point your camera at the product you want to scan.
+- Tap the "Capture" button.
+
+**View Results:**
+- The app will identify the product and display its name and nutritional information.
+- A Nutri-Grade (A, B, C, or D) will appear, along with a detailed explanation.
+
+**Navigate Back:**
+- Use the back button in the result page to return to the scanning screen.
+  
+
 ## Our Project
 <img src="https://github.com/user-attachments/assets/3637d315-97a4-42f6-8354-80781d54ab90" alt="Image 1" width="600"/>
 <img src="https://github.com/user-attachments/assets/17651436-f93d-4afd-94e9-2c04a4386620" alt="Image 2" width="600"/>
