@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back_btn"
+            android:background="@drawable/card_background_button"
+            android:padding="8dp"
+            android:elevation="4dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:text="Artikel"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="130dp"
+            android:src="@drawable/ic_share_btn"
+            android:background="@drawable/card_background_button"
+            android:padding="8dp"
+            android:elevation="4dp" />
+    </LinearLayout>
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Article title -->
+            <TextView
+                android:id="@+id/tvArticleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penyebab Sering Terbangun Saat Tengah Malam yang Bisa Mengganggu Kesehatan"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingBottom="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- Article metadata -->
+                <TextView
+                    android:id="@+id/tvArticleSource"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CNN Indonesia"
+                    android:textSize="14sp"
+                    android:textColor="#757575"/>
+
+                <TextView
+                    android:id="@+id/tvArticleDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="21 Juni 2023"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:paddingBottom="16dp" />
+            </LinearLayout>
+
+
+
+            <!-- Article image -->
+            <ImageView
+                android:id="@+id/tvArticlePhotoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo_description_article1"/>
+
+            <!-- Article content -->
+            <TextView
+                android:id="@+id/tvArticleDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sering terbangun malam hari bisa menjadi masalah serius bagi kesehatan seseorang karena dapat mengganggu pola tidur yang sehat. Gangguan ini juga dapat mengakibatkan kualitas tidur yang buruk, kelelahan, dan bahkan gangguan kesehatan lainnya. Oleh karena itu, penting bagi kita untuk memahami penyebab terbangun malam serta cara mengatasinya."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:paddingTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

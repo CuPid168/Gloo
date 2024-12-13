@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Lapisan bayangan -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F2F2F2" /> <!-- Warna abu-abu sangat terang -->
+            <corners android:radius="16dp" /> <!-- Radius sudut -->
+        </shape>
+    </item>
+
+    <!-- Lapisan utama (putih) -->
+    <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- Warna putih -->
+            <corners android:radius="16dp" /> <!-- Radius sudut -->
+        </shape>
+    </item>
+</layer-list>

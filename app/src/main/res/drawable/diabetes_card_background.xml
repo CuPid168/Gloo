@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Lapisan bayangan -->
+    <item>
+        <shape>
+            <solid android:color="#80000000" /> <!-- Warna bayangan dengan alpha -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+
+    <!-- Lapisan utama -->
+    <item android:left="0dp" android:top="4dp">
+        <shape>
+            <solid android:color="#14B8A6" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</layer-list>

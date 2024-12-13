@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_100"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"> <!-- Pastikan height wrap_content -->
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/greetingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Halo,"
+                    android:textColor="@color/gray_500"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Fernando Manuel 👋"
+                    android:textColor="@color/gray_800"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/desc_test"
+                android:src="@drawable/ic_profile_test"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/circle_background" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/sugarLevelCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_below="@id/header"
+            android:layout_margin="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/sugarIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/card_background_button_lavender"
+                    android:contentDescription="@string/desc_test"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_sugar_level_test" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:id="@+id/sugarLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kadar_test"
+                        android:textSize="18sp"
+                        android:textColor="@color/gray_800"
+                        android:fontFamily="@font/inter_bold" />
+
+                    <TextView
+                        android:id="@+id/sugarLevelDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="@string/kadar_desc_test"
+                        android:textColor="@color/gray_500"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/editSugarLevel"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/desc_test"
+                    android:src="@drawable/ic_edit_pencil"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/hypoglycemiaIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/desc_test"
+                        android:src="@drawable/ic_hipoglikemia"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/hypoglycemiaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="@string/hipoglikemia_test"
+                        android:textColor="@color/gray_500"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hypoglycemiaValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hipo_dest_test"
+                        android:textSize="16sp"
+                        android:textColor="@color/gray_800"
+                        android:fontFamily="@font/inter_bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/normalIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/desc_test"
+                        android:src="@drawable/ic_normal"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/normalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/normal_test"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray_500"
+                        android:fontFamily="@font/inter_regular"/>
+
+                    <TextView
+                        android:id="@+id/normalValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/normal_desc_test"
+                        android:textSize="16sp"
+                        android:textColor="@color/gray_800"
+                        android:fontFamily="@font/inter_bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/hyperglycemiaIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/desc_test"
+                        android:src="@drawable/ic_hiperglikemia"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/hyperglycemiaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hiperglikemia_test"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray_500"
+                        android:fontFamily="@font/inter_regular"/>
+
+                    <TextView
+                        android:id="@+id/hyperglycemiaValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hipe_desc_test"
+                        android:textSize="16sp"
+                        android:textColor="@color/gray_800"
+                        android:fontFamily="@font/inter_bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkDiabetesCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_background_teal"
+            android:padding="16dp"
+            android:layout_below="@id/sugarLevelCard"
+            android:layout_margin="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/checkDiabetesIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/desc_test"
+                android:src="@drawable/ic_check_diabetes"
+                android:background="@drawable/card_background_button_check"
+                android:scaleType="center"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:id="@+id/checkDiabetesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diabetes_test"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/inter_bold"/>
+
+                <TextView
+                    android:id="@+id/checkDiabetesDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diabetes_desc_test"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/inter_regular"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/checkDiabetesArrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/desc_test"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/whatYouNeedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apa_yang_kamu_butuhkan_test"
+            android:textSize="18sp"
+            android:textColor="@color/gray_800"
+            android:fontFamily="@font/inter_bold"
+            android:layout_below="@id/checkDiabetesCard"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/needsIcons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_below="@id/whatYouNeedText"
+            android:layout_margin="16dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/consulationButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/consultationIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/desc_test"
+                    android:src="@drawable/ic_consultation_btn"
+                    android:background="@drawable/card_background_button_lavender_circle"
+                    android:scaleType="center"/>
+
+                <TextView
+                    android:id="@+id/consultationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/konsultasi_test"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/articleButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/articleIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/desc_test"
+                    android:src="@drawable/ic_article_btn"
+                    android:scaleType="center"
+                    android:background="@drawable/card_background_button_lavender_circle"/>
+
+                <TextView
+                    android:id="@+id/articleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artikel_test"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/communityButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/communityIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/desc_test"
+                    android:src="@drawable/ic_community_btn"
+                    android:scaleType="center"
+                    android:background="@drawable/card_background_button_lavender_circle"/>
+
+                <TextView
+                    android:id="@+id/communityText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/komunitas_test"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/medicineButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/medicineIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/desc_test"
+                    android:src="@drawable/ic_medicine_btn"
+                    android:scaleType="center"
+                    android:background="@drawable/card_background_button_lavender_circle"/>
+
+                <TextView
+                    android:id="@+id/medicineText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/obat_test"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/healthMetrics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_below="@id/needsIcons"
+            android:layout_margin="16dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/card_background"
+                android:padding="16dp"
+                android:layout_marginEnd="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/bmiIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/desc_test"
+                        android:src="@drawable/ic_imt"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/bmiText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/imt_test"
+                        android:textSize="18sp"
+                        android:textColor="@color/gray_800"
+                        android:fontFamily="@font/inter_bold"
+                        android:layout_marginStart="8dp" />
+
+                    <ImageView
+                        android:id="@+id/editBmi"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/desc_test"
+                        android:src="@drawable/ic_edit_pencil"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/bmiValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/IMT_desc_test"
+                    android:textSize="24sp"
+                    android:textColor="@color/gray_800"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/addBmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tambahkan_test"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_500"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/noBmiData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tidak_ada_data_test"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_500"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/card_background"
+                android:padding="16dp"
+                android:layout_marginStart="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/bloodPressureIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/desc_test"
+                        android:src="@drawable/ic_blood"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/bloodPressureText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/darah_test"
+                        android:textSize="18sp"
+                        android:textColor="@color/gray_800"
+                        android:fontFamily="@font/inter_bold"
+                        android:layout_marginStart="8dp"/>
+
+                    <ImageView
+                        android:id="@+id/editBloodPressure"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/desc_test"
+                        android:src="@drawable/ic_edit_pencil"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/bloodPressureValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/darah_desc_test"
+                    android:textSize="24sp"
+                    android:textColor="@color/gray_800"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/addBloodPressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tambahkan_test"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_500"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/noBloodPressureData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tidak_ada_data_test"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_500"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

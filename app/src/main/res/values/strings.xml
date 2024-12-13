@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">Gloo</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_gloocam">GlooCam</string>
+    <string name="title_data">Data</string>
+    <string name="title_profile">Profile</string>
+    <string name="desc_test">TODO</string>
+    <string name="name_test">Fernando Manuel 👋</string>
+    <string name="kadar_test">Kadar Gula: 0mg/dL</string>
+    <string name="kadar_desc_test">Cek level kadar gulamu</string>
+    <string name="hipoglikemia_test">Hipoglikemia</string>
+    <string name="hipo_dest_test"><![CDATA[<70 mg/dL]]></string>
+    <string name="normal_test">Normal</string>
+    <string name="normal_desc_test"><![CDATA[>69 mg/dL]]></string>
+    <string name="hiperglikemia_test">Hiperglikemia</string>
+    <string name="hipe_desc_test"><![CDATA[>140 mg/dL]]></string>
+    <string name="diabetes_test">Cek Diabetes</string>
+    <string name="diabetes_desc_test">Cek risiko diabetes sekarang</string>
+    <string name="apa_yang_kamu_butuhkan_test">Apa yang kamu butuhkan?</string>
+    <string name="konsultasi_test">Konsultasi</string>
+    <string name="artikel_test">Artikel</string>
+    <string name="komunitas_test">Komunitas</string>
+    <string name="obat_test">Obat</string>
+    <string name="imt_test">IMT</string>
+    <string name="IMT_desc_test">0 kg/m²</string>
+    <string name="tambahkan_test">Tambahkan</string>
+    <string name="tidak_ada_data_test">Tidak ada data</string>
+    <string name="darah_test">Darah</string>
+    <string name="darah_desc_test">0 mmHg</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message_1">Halo, Dokter Senia. Saya khawatir dengan kondisi diabetes saya. Saya merasa sulit mengontrol kadar gula darah saya akhir-akhir ini</string>
+    <string name="message_2">Halo, tentu saja. Mari kita bicarakan lebih lanjut. Bagaimana perasaan Anda belakangan ini?</string>
+    <string name="message_3">Apakah ada perubahan pola makan atau tingkat stres yang mungkin memengaruhi kadar gula darah Anda?</string>
+    <string name="message_4">Saya merasa cukup stres belakangan ini karena banyak tuntutan di tempat kerja. Dan, saya juga mengakui bahwa pola makan saya sedikit tidak teratur</string>
+    <string name="message_5">Saya mengerti, stres dan pola makan yang tidak teratur memang dapat mempengaruhi kadar gula darah.</string>
+    <string name="title_medicine">Coming Soon!</string>
+
+    <!-- Buat data artikel -->
+    <string-array name="Thumbnail_Photo">
+        <item>@drawable/photo_example_article1</item>
+        <item>@drawable/photo_example_article2</item>
+        <item>@drawable/photo_example_article3</item>
+    </string-array>
+
+    <string-array name="Title_Article">
+        <item>Penyebab Sering Terbangun Saat Tengah alam yang Bisa Mengganggu Kesehatan</item>
+        <item>Pentingnya Pendidikan Pasien dalam Pegelolaan Diabetes</item>
+        <item>Peran Aktivitas Fisik dalam Pengelolaan Diabetes</item>
+    </string-array>
+
+    <string-array name="Source_Article">
+        <item>CNN Indonesia</item>
+        <item>CNN Indonesia</item>
+        <item>CNN Indonesia</item>
+    </string-array>
+
+    <string-array name="Date_Article">
+        <item>21/06/2024</item>
+        <item>10/08/2024</item>
+        <item>29/08/2024</item>
+    </string-array>
+
+    <string-array name="Photo_Description_Article">
+        <item>@drawable/photo_description_article1</item>
+        <item>@drawable/photo_description_article2</item>
+        <item>@drawable/photo_description_article3</item>
+    </string-array>
+
+    <string-array name="Description_Article">
+        <item>Sering terbangun malam hari bisa menjadi masalah serius bagi kesehatan seseorang karena dapat mengganggu pola tidur yang sehat. Gangguan ini juga dapat mengakibatkan kualitas tidur yang buruk, kelelahan, dan bahkan gangguan kesehatan lainnya. Oleh karena itu, penting bagi kita untuk memahami penyebab terbangun malam serta cara mengatasinya.
+            \n
+            \nBeberapa penyebab umum terbangun malam hari termasuk stres, kegelisahan, konsumsi alkohol atau kafein sebelum tidur. Selain itu, faktor lingkungan seperti suhu kamar tidur yang terlalu panas atau terlalu dingin juga dapat menjadi penyebab seseorang terbangun malam.
+            \n
+            \nPenyebab Sering Terbangun Saat Tengah Malam :
+            \n
+            \n1. Stres
+            \nSalah satu penyebab utama sering terbangun di malam hari adalah stres. Stres dapat menyebabkan pikiran yang tidak tenang dan sulit untuk tidur nyenyak. Ketika seseorang terlalu banyak berpikir tentang masalah atau kecemasan, ini dapat mengganggu tidur di malam hari, dan menyebabkan bangun-bangun dalam tidur.
+            \n
+            \n2. Gangguan Tidur
+            \nSelain stres, gangguan tidur seperti sleep apnea juga dapat menjadi penyebab seseorang sering terbangun di malam hari. Sleep apnea adalah gangguan tidur yang menyebabkan penderitanya mengalami berhenti bernapas secara periodik selama tidur, yang dapat membangunkannya dari tidur.</item>
+        <item>Lorem ipsum</item>
+        <item>Lorem ipsum</item>
+    </string-array>
+
+    <!-- Buat data community -->
+    <string-array name="all_community_photo">
+        <item>@drawable/photo_community_1</item>
+        <item>@drawable/photo_community_2</item>
+        <item>@drawable/photo_community_3</item>
+    </string-array>
+
+    <string-array name="all_community_name">
+        <item>Budi Santoso</item>
+        <item>Yeni Indrawati</item>
+        <item>Niko Putra</item>
+    </string-array>
+
+    <string-array name="all_community_time">
+        <item>5 jam yang lalu</item>
+        <item>11 jam yang lalu</item>
+        <item>23 jam yang lalu</item>
+    </string-array>
+
+    <string-array name="all_community_post">
+        <item>Saya baru saja didiagnosa dengan diabetes tipe 2 dan agak kewalahan dengan semua informasi yang harus saya pelajari</item>
+        <item>Satu hal yang benar-benar membantu saya adalah mengukur kadar gula darah secara teratur dan mencatatnya</item>
+        <item>Saya pasti akan mencoba untuk lebih fokus pada pola makan sehat dan mengukur gula darah saya secara teratur</item>
+    </string-array>
+
+    <string-array name="all_community_likeCount">
+        <item>120</item>
+        <item>84</item>
+        <item>1,3k</item>
+    </string-array>
+
+    <string-array name="all_community_commentCount">
+        <item>36</item>
+        <item>5</item>
+        <item>358</item>
+    </string-array>
+
+    <string-array name="my_community_time">
+        <item>7 jam yang lalu</item>
+        <item>15 jam yang lalu</item>
+        <item>1 hari yang lalu</item>
+        <item>3 hari yang lalu</item>
+    </string-array>
+
+    <string-array name="my_community_post">
+        <item>Apakah ada yang memiliki pengalaman dengan obat-obatan untuk diabetes?</item>
+        <item>Pastikan juga untuk memeriksa gula darah secara teratur ya..</item>
+        <item>Saya juga baru saja didiagnosis beberapa bulan yang lalu..</item>
+        <item>Mencatat makanan dan gula darah saya membantu saya memahami bagaimana makanan memengaruhi kadar gula darah</item>
+    </string-array>
+
+    <string-array name="my_community_likeCount">
+        <item>10</item>
+        <item>59</item>
+        <item>1,7k</item>
+        <item>2,1k</item>
+    </string-array>
+
+    <string-array name="my_community_commentCount">
+        <item>5</item>
+        <item>21</item>
+        <item>124</item>
+        <item>153</item>
+    </string-array>
+
+</resources>

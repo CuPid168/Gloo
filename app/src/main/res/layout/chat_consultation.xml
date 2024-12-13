@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back_btn" />
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@id/backButton"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_profile_test"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profileImage"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dr. Friska Senia"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/onlineStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Onlne"
+                android:textSize="14sp"
+                android:textColor="@color/green_500" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/callButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_call_btn" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_below="@id/header" />
+
+    <TextView
+        android:id="@+id/todayLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Hari ini"
+        android:textSize="14sp"
+        android:textColor="@color/gray_500" />
+
+    <ScrollView
+        android:id="@+id/roomChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/todayLabel"
+        android:layout_above="@id/messageInputContainer"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_message_blue"
+                android:padding="12dp"
+                android:layout_marginStart="120dp"
+                android:text="@string/message_1"
+                android:textColor="@color/white"
+                android:layout_gravity="end"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_message_gray"
+                android:padding="12dp"
+                android:layout_marginEnd="120dp"
+                android:text="@string/message_2"
+                android:textColor="@color/gray_800"
+                android:layout_gravity="start"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_message_gray"
+                android:padding="12dp"
+                android:layout_marginEnd="120dp"
+                android:text="@string/message_3"
+                android:textColor="@color/gray_800"
+                android:layout_gravity="start"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_message_blue"
+                android:padding="12dp"
+                android:layout_marginStart="120dp"
+                android:text="@string/message_4"
+                android:textColor="@color/white"
+                android:layout_gravity="end"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_message_gray"
+                android:padding="12dp"
+                android:layout_marginEnd="120dp"
+                android:text="@string/message_5"
+                android:textColor="@color/gray_800"
+                android:layout_gravity="start"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/messageInputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="1dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/card_background"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <!-- Icon Emoji -->
+            <ImageView
+                android:id="@+id/emojiIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_smile"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Icon Gambar -->
+            <ImageView
+                android:id="@+id/imageIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_gallery"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp" />
+
+            <!-- EditText untuk input pesan -->
+            <EditText
+                android:id="@+id/messageInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Ketik pertanyaanmu..."
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColor="@color/gray_800"
+                android:textColorHint="@color/gray_500"
+                android:textSize="14sp" />
+
+            <!-- Tombol Kirim -->
+            <ImageButton
+                android:id="@+id/sendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_send_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
